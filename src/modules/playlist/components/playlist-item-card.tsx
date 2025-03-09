@@ -3,19 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 import { PlayButton } from "./play-button";
-import {
-  VIEW_TRANSITION_NAME,
-  ViewTransition,
-} from "@/modules/view-transition";
+import { ViewTransition } from "@/modules/view-transition";
 
 interface PlaylistItemCardProps {
   playlist: Playlist;
 }
 
 export const PlaylistItemCard: FC<PlaylistItemCardProps> = ({ playlist }) => (
-  <ViewTransition
-    name={`${VIEW_TRANSITION_NAME.PlaylistItemImage}-${playlist.id}`}
-  >
+  <ViewTransition name={`playlist-item-card-${playlist.id}`}>
     <Link
       href={`/playlist/${playlist.id}`}
       className="playlist-item flex group relative transition-all duration-300 overflow-hidden items-center gap-5 rounded-md shadow-lg hover:shadow-xl outline-none bg-zinc-500/30 hover:bg-zinc-500/50 focus:bg-zinc-500/50"
