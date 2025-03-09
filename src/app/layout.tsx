@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "@/assets/global.scss";
-import { Sidebar } from "@/modules/sidebar";
 import { HomeLayout } from "@/modules/layouts";
 
 const poppins = Poppins({

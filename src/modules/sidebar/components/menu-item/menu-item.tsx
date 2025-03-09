@@ -2,8 +2,6 @@ import Link from "next/link";
 import { FC, PropsWithChildren } from "react";
 import { DynamicIcon, IconName } from "lucide-react/dynamic";
 
-import S from "./menu-item.module.scss";
-
 interface MenuItemProps extends PropsWithChildren {
   href: string;
   icon: IconName;
