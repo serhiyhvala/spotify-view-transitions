@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Spotify View Transitions",
     creator: "@khvala",
-    images: ["/meta-image.png"],
+    images: ["/meta_image.png"],
   }
 };
 
