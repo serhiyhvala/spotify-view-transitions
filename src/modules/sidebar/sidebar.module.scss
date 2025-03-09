@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.5rem;
+}
+
+.menu,
+.menuItem {
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+}
+
+.menuItem {
+  flex: 1;
+}
