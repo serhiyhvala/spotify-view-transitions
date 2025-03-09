@@ -1,11 +1,11 @@
 import { Playlist } from "@/lib";
 import { FC, Fragment } from "react";
 
-interface InlineArtistProps {
+interface InlineArtistsProps {
   artists: Playlist["artists"];
 }
 
-export const InlineArtist: FC<InlineArtistProps> = ({ artists }) => {
+export const InlineArtists: FC<InlineArtistsProps> = ({ artists }) => {
   return artists.map((artist, index) => (
     <Fragment key={artist}>
       {artist}

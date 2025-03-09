@@ -1,5 +1,5 @@
 import { Playlist } from "@/lib";
-import { InlineArtist } from "@/modules/artists";
+import { InlineArtists } from "@/modules/artists";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
@@ -27,7 +27,7 @@ export const MenuCard: FC<MenuCardProps> = ({ playlist }) => (
         {playlist.title}
       </div>
       <div className="text-gray-400 text-sm truncate flex-1">
-        <InlineArtist artists={playlist.artists} />
+        <InlineArtists artists={playlist.artists} />
       </div>
     </div>
   </Link>
