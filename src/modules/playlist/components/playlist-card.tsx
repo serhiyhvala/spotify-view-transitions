@@ -14,7 +14,7 @@ export const PlaylistCard: FC<PlaylistCardProps> = ({ playlist }) => (
   <ViewTransition name={`playlist-page-${playlist?.id}`}>
     <Link
       href={`/playlist/${playlist.id}`}
-      className="playlist-card p-4 flex-col items-center group relative transition-all duration-300 overflow-hidden gap-5 rounded-md shadow-lg hover:shadow-xl outline-none bg-zinc-500/5 hover:bg-zinc-500/20 focus:bg-zinc-500/20"
+      className="playlist-card p-4 flex-col items-center group relative transition-all duration-300 overflow-hidden gap-5 rounded-md shadow-lg hover:shadow-xl outline-none bg-zinc-500/5 hover:bg-zinc-500/20 focus:bg-zinc-500/20 w-full sm:w-48"
     >
       <div className="w-40">
         <div className="relative group mx-auto h-40 w-full flex-none shadow-lg">
