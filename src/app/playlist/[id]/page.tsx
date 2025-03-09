@@ -14,7 +14,7 @@ const PlaylistPage = async ({ params }: { params: PlaylistPageProps }) => {
   const playlist = allPlaylists.find((playlist) => playlist.id === id);
 
   return (
-    <ViewTransition name={`playlist-item-card-${playlist?.id}`}>
+    <ViewTransition name={`playlist-page-${playlist?.id}`}>
       <div className="relative bg-zinc-900 min-h-full flex flex-col overflow-x-hidden rounded-lg">
         <Header />
         <div className="flex flex-col items-center md:flex-row md:items-stretch gap-8 px-6 z-[2]">

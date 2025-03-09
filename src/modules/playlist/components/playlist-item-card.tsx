@@ -10,7 +10,7 @@ interface PlaylistItemCardProps {
 }
 
 export const PlaylistItemCard: FC<PlaylistItemCardProps> = ({ playlist }) => (
-  <ViewTransition name={`playlist-item-card-${playlist.id}`}>
+  <ViewTransition name={`playlist-page-${playlist?.id}`}>
     <Link
       href={`/playlist/${playlist.id}`}
       className="playlist-item flex group relative transition-all duration-300 overflow-hidden items-center gap-5 rounded-md shadow-lg hover:shadow-xl outline-none bg-zinc-500/30 hover:bg-zinc-500/50 focus:bg-zinc-500/50"
