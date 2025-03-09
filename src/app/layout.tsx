@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "@/assets/global.scss";
 import { HomeLayout } from "@/modules/layouts";
+import { Analytics } from "@vercel/analytics/react"
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -32,6 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`dark ${poppins.className}`}>
         <HomeLayout>{children}</HomeLayout>
+        <Analytics />
       </body>
     </html>
   );
